@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ana Sofía Sánchez Rojas | Ingeniera Química</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-wrap">
+      <a href="#hero" class="nav-brand" aria-label="Home">ASR</a>
+      <ul class="nav-menu" id="navMenu" role="menubar">
+        <li role="none"><a href="#about"      role="menuitem" data-i18n="nav.about">Sobre mí</a></li>
+        <li role="none"><a href="#experience" role="menuitem" data-i18n="nav.experience">Experiencia</a></li>
+        <li role="none"><a href="#education"  role="menuitem" data-i18n="nav.education">Educación</a></li>
+        <li role="none"><a href="#skills"     role="menuitem" data-i18n="nav.skills">Habilidades</a></li>
+        <li role="none"><a href="#contact"    role="menuitem" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="lang-switcher" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
+        <button class="lang-btn"        data-lang="en" aria-pressed="false">EN</button>
+        <button class="lang-btn"        data-lang="de" aria-pressed="false">DE</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Ingeniera Química</p>
+      <h1 class="hero-name">Ana Sofía<br /><span>Sánchez Rojas</span></h1>
+      <p class="hero-location" aria-label="Location">📍 Bogotá, Colombia</p>
+      <p class="hero-bio" data-i18n="hero.bio"></p>
+      <div class="lang-pills" aria-label="Languages">
+        <span class="lang-pill">🇨🇴 Español · Nativo</span>
+        <span class="lang-pill">🇬🇧 English · C1</span>
+        <span class="lang-pill">🇩🇪 Deutsch · B2</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#about"   class="btn btn-primary" data-i18n="hero.cta_about">Conoce mi perfil</a>
+        <a href="#contact" class="btn btn-outline"  data-i18n="hero.cta_contact">Contactar</a>
+      </div>
+    </div>
+
+    <div class="hero-graphic" aria-hidden="true">
+      <div class="molecule">
+        <div class="mol-center"></div>
+        <div class="mol-orbit orbit-1"><div class="mol-atom"></div></div>
+        <div class="mol-orbit orbit-2"><div class="mol-atom"></div></div>
+        <div class="mol-orbit orbit-3"><div class="mol-atom"></div></div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ═══════════════════ ABOUT ═══════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-tag" data-i18n="nav.about">Sobre mí</span>
+        <h2 data-i18n="about.heading">Perfil Profesional</h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-text">
+          <p data-i18n="about.bio"></p>
+          <div class="stats-row" aria-label="Key highlights">
+            <div class="stat">
+              <strong>8°</strong>
+              <span data-i18n="about.stat_semester">Semestre en curso</span>
+            </div>
+            <div class="stat">
+              <strong>3+</strong>
+              <span data-i18n="about.stat_roles">Roles académicos</span>
+            </div>
+            <div class="stat">
+              <strong>2×</strong>
+              <span data-i18n="about.stat_scholarships">Becas de excelencia</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-card" aria-label="Contact information">
+          <h3 data-i18n="about.contact_heading">Contacto</h3>
+          <ul class="info-list">
+            <li><span class="info-icon" aria-hidden="true">📍</span><span>Bogotá, Colombia</span></li>
+            <li><span class="info-icon" aria-hidden="true">📞</span><a href="tel:+573143264046">+57 314 326 4046</a></li>
+            <li><span class="info-icon" aria-hidden="true">✉️</span><a href="mailto:anas.sanchezr@utadeo.edu.co">anas.sanchezr<wbr>@utadeo.edu.co</a></li>
+            <li><span class="info-icon" aria-hidden="true">💼</span><a href="https://www.linkedin.com/in/ana-sofía-sánchez-rojas-298b8b367/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+  <section id="experience" class="section-alt">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-tag" data-i18n="nav.experience">Experiencia</span>
+        <h2 data-i18n="exp.heading">Experiencia Relevante</h2>
+      </div>
+      <div class="timeline" id="timeline" role="list"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ EDUCATION ═══════════════════ -->
+  <section id="education">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-tag" data-i18n="nav.education">Educación</span>
+        <h2 data-i18n="edu.heading">Formación Académica</h2>
+      </div>
+      <div class="edu-grid" id="eduGrid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SKILLS ═══════════════════ -->
+  <section id="skills" class="section-alt">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-tag" data-i18n="nav.skills">Habilidades</span>
+        <h2 data-i18n="skills.heading">Habilidades</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-card">
+          <h3 data-i18n="skills.technical">⚗️ Técnicas</h3>
+          <div class="tag-cloud" id="tagTech" role="list"></div>
+        </div>
+        <div class="skill-card">
+          <h3 data-i18n="skills.soft">🤝 Blandas</h3>
+          <div class="tag-cloud" id="tagSoft" role="list"></div>
+        </div>
+        <div class="skill-card">
+          <h3 data-i18n="skills.languages_label">🌐 Idiomas</h3>
+          <div id="langBars"></div>
+        </div>
+      </div>
+      <div class="achievements-section">
+        <h3 data-i18n="skills.achievements">🏆 Logros Académicos</h3>
+        <div class="achievement-list" id="achievementList" role="list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT ═══════════════════ -->
+  <section id="contact" class="section-dark">
+    <div class="container">
+      <div class="section-label center">
+        <span class="label-tag light" data-i18n="nav.contact">Contacto</span>
+        <h2 data-i18n="contact.heading">¿Hablamos?</h2>
+        <p class="section-sub" data-i18n="contact.sub">Abierta a prácticas profesionales y oportunidades de colaboración</p>
+      </div>
+      <div class="contact-cards">
+        <a href="mailto:anas.sanchezr@utadeo.edu.co" class="cta-card" aria-label="Send email">
+          <span class="cta-icon" aria-hidden="true">✉️</span>
+          <span class="cta-label" data-i18n="contact.email">Email</span>
+          <span class="cta-value">anas.sanchezr@utadeo.edu.co</span>
+        </a>
+        <a href="tel:+573143264046" class="cta-card" aria-label="Call phone number">
+          <span class="cta-icon" aria-hidden="true">📞</span>
+          <span class="cta-label" data-i18n="contact.phone">Teléfono</span>
+          <span class="cta-value">+57 314 326 4046</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ana-sofía-sánchez-rojas-298b8b367/" target="_blank" rel="noopener noreferrer" class="cta-card" aria-label="LinkedIn profile">
+          <span class="cta-icon" aria-hidden="true">💼</span>
+          <span class="cta-label">LinkedIn</span>
+          <span class="cta-value" data-i18n="contact.linkedin">Ver perfil →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>© 2025 Ana Sofía Sánchez Rojas &nbsp;·&nbsp; <span data-i18n="footer.rights">Todos los derechos reservados</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
